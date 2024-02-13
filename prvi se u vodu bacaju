@@ -1,0 +1,21 @@
+
+NIS = input("koliko košta nekretnina iz vaših snova u €?")
+x = int(NIS)
+
+P = int(input("kolika ti je mjesečna plaća?"))
+
+GP = P * 12  # godišnja plaća/bezveze
+
+U = input("Imaš li ušteđevine? Da/Ne ")
+
+if U.lower() == "da":  
+    USTD = int(input("molim te napiši dosadašnju ušteđevninu: "))
+else:
+    USTD = int(0)
+
+y = x - USTD
+
+z = y / GP
+
+print("fali ti još ", y, "€, za kupiti kuću i ako na ništa ne trošiš od plaće trebat će ti još ", z,
+      "godina rada da kupiš nekretninu iz svojih snova")
